@@ -11,15 +11,15 @@ In addition to maintaining `dbt-core`, [Fishtown Analytics](https://github.com/f
 
 | Adapter for  | Documentation | Core features | dbt Cloud | Distribution |
 | ------------ | ------------- | ------- | ------ | ---- |
-| Postgres     | [Profile Setup](postgres-profile) | ✅ | ✅  | core |
-| Redshift     | [Profile Setup](redshift-profile), [Configuration](redshift-configs) | ✅ | ✅  | core |
-| BigQuery     | [Profile Setup](bigquery-profile), [Configuration](bigquery-configs) | ✅  | ✅  | core |
-| Snowflake    | [Profile Setup](snowflake-profile), [Configuration](snowflake-configs) | ✅ | ✅  | core |
-| Apache Spark | [Profile Setup](spark-profile), [Configuration](spark-configs) | nearly full support | preview | plugin |
-| Databricks   | [Profile Setup](spark-profile#odbc), [Configuration](spark-configs#databricks-configurations) | nearly full support | preview | plugin |
+| Postgres     | [Profile Setup](postgres-profile) | ✅ | ✅  | standard |
+| Redshift     | [Profile Setup](redshift-profile), [Configuration](redshift-configs) | ✅ | ✅  | standard |
+| BigQuery     | [Profile Setup](bigquery-profile), [Configuration](bigquery-configs) | ✅  | ✅  | standard |
+| Snowflake    | [Profile Setup](snowflake-profile), [Configuration](snowflake-configs) | ✅ | ✅  | standard |
+| Apache Spark | [Profile Setup](spark-profile), [Configuration](spark-configs) | ✅ | ✅ | plugin |
+| Databricks   | [Profile Setup](spark-profile#odbc), [Configuration](spark-configs#databricks-configurations) | ✅ | ✅ | plugin |
 | Presto       | [Profile Setup](presto-profile) | partial support |  | plugin |
 
-Adapters distributed with "core" are ready to use when you [install dbt](dbt-cli/installation). For "plugin" adapters, check each page for specific installation instructions.
+Adapters included in the "standard" distribution are ready to use when you [install dbt](dbt-cli/install/overview). Most adapter plugins can be installed as `pip install dbt-[adapter]`. Check each plugin's page to verify installation methods.
 
 ### Vendor Supported
 

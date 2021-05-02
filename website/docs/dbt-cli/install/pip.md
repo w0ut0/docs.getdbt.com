@@ -8,16 +8,16 @@ dbt is a Python module distributed on [PyPi](https://pypi.org/project/dbt/), and
 <FAQ src="install-python-compatibility" />
 <FAQ src="install-pip-best-practices" />
 
-### Standard Installation
+### Bundled installation
 
-To install the standard dbt distribution, including the four most popular adapter plugins:
+For historical reasons, the bundled distribution of dbt includes `dbt-core` and the four most popular adapters:
 
 ```shell
 pip install dbt
 ```
 
 Check your installation with `dbt --version`:
-```shell
+```
 $ dbt --version
 installed version: 0.19.1
    latest version: 0.19.1
@@ -33,7 +33,8 @@ Plugins:
 
 ### Install a specific adapter
 
-If you know which adapter you're using, or if its dbt plugin is not included by the standard distribution, you can always install it directly as `dbt-[adapter]`. For instance, if using postgres:
+If you know which adapter you're using, we recommend installing it directly as `dbt-[adapter]`. (This is always necessary if your adapter plugin is not included by the bundled distribution.) For instance, if using postgres:
+
 ```shell
 pip install dbt-postgres
 ```

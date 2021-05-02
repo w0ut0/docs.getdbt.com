@@ -13,7 +13,8 @@ brew tap fishtown-analytics/dbt
 brew install dbt
 ```
 
-Homebrew will install the standard dbt distribution, including the four most popular adapter plugins. Test your installation with `dbt --version`:
+Homebrew will install `dbt-core` and the four most popular adapter plugins. Test your installation with `dbt --version`:
+
 ```
 $ dbt --version
 installed version: 0.19.1
